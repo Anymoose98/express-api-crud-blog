@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
     res.send('<h1>Pagina iniziale</h1>')
 })
 
+// parte dolci
 app.use('/dolci', dolciRouter)
 
 app.listen(3000, () => {

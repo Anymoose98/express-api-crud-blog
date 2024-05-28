@@ -40,7 +40,19 @@ const show = (req, res) => {
         res.status(404).send({ message: 'Dolce non trovato' });
     }
 };
+
+// Delete
+const deleteDolce = (req, res) => {
+    const index = dolci.findIndex(d => d.slug === req.params.slug);
+    if (index !== -1) {
+        dolci.splice(index, 1);
+        res.send({ message: 'Dolce eliminato' });
+    } else {
+        res.status(404).send({ message: 'Impossibile eliminare il dolce perché non trovato' });
+    }
+};
 module.exports = {
     index,
-    show
+    show,
+    deleteDolce
 };
