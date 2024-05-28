@@ -1,0 +1,15 @@
+{
+  "name": "express-api-crud-blog",
+  "version": "1.0.0",
+  "description": "Ciao ragazzi, esercizio di oggi: express-api-crud-blog\r Esercizio\r Per il nostro blog, concentriamoci sul creare 2 rotte:\r / [POST] - rotta store del crud che riceverà dei dati e creerà un nuovo post. Questa dovrà riceve i dati in formato application/x-www-urlencoded e dovrà ritornare un redirect nel caso di richiesta html, altrimenti di default il json dell’elemento appena creato\r /:slug [DELETE] - rotta destroy del crud che dovrà, attraverso un middleware, ritornare un 404 nel caso non sia stato trovato un post corrispondente. Ritornare un redirect nel caso di richiesta html, altrimenti di default del testo con scritto “post eliminato”\r Aggiungiamo un middleware globale per gestire gli errori.\r Tutte le funzioni delle rotte dovranno essere scritte nel controller dedicato.\r Testare le rotte tramite Postman.\r Bonus\r Tramite una funzione, salvare l'array dei post nel file .json\r nella funzione store permettere di passare i dati nel formato multipart/form-data tramite multer\r permettere di eseguire l'upload dell'immagine principale del post.\r Buon Lavoro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodeman": "^1.1.2"
+  }
+}
